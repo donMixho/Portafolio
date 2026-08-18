@@ -26,3 +26,21 @@ function toggleDetails(id, btn) {
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Portafolio interactivo de Leandro Ruiz cargado exitosamente.');
 });
+
+
+
+// Función para copiar texto al portapapeles
+function copiarTexto(texto, elementoBtn) {
+    navigator.clipboard.writeText(texto).then(() => {
+        const textoOriginal = elementoBtn.innerHTML;
+        elementoBtn.innerHTML = '<i class="fa-solid fa-check"></i> ¡Copiado!';
+        elementoBtn.classList.add('copied');
+
+        setTimeout(() => {
+            elementoBtn.innerHTML = textoOriginal;
+            elementoBtn.classList.remove('copied');
+        }, 2000);
+    }).catch(err => {
+        console.error('Error al copiar: ', err);
+    });
+}
