@@ -275,12 +275,31 @@
             </div>
         </section>S
     <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <p>&copy; 2026 Leandro Ruiz — Estudiante de Ing. Informática & Ciencia de Datos</p>
-            <div class="social-links">
-                <a href="https://github.com/donMixho" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+    <!-- Footer / Contacto -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>¿Hablamos?</h3>
+            <p>Puedes contactarme directamente a través de mi teléfono o correo electrónico:</p>
+            
+            <div class="contact-buttons">
+                <!-- Botón Teléfono -->
+                <div class="contact-item">
+                    <span class="contact-text"><i class="fa-solid fa-phone"></i> +569 9999 9999</span>
+                    <button class="copy-btn" onclick="copiarTexto('+5699999999', this)">
+                        <i class="fa-regular fa-copy"></i> Copiar
+                    </button>
+                </div>
+
+                <!-- Botón Correo -->
+                <div class="contact-item">
+                    <span class="contact-text"><i class="fa-solid fa-envelope"></i> lea.ruiz@duocuc.cl</span>
+                    <button class="copy-btn" onclick="copiarTexto('lea.ruiz@duocuc.cl', this)">
+                        <i class="fa-regular fa-copy"></i> Copiar
+                    </button>
+                </div>
             </div>
+
+            <p class="copyright">© 2026 Leandro Ruiz. Todos los derechos reservados.</p>
         </div>
     </footer>
 
