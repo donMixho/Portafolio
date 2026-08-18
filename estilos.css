@@ -455,3 +455,77 @@ footer {
         text-align: center;
     }
 }
+
+
+/* --- Footer & Contacto --- */
+.footer {
+    padding: 3rem 1.5rem;
+    background-color: var(--card-bg, #1e293b);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-text {
+    font-weight: 500;
+    color: #f8fafc;
+    font-size: 0.95rem;
+}
+
+.copy-btn {
+    background-color: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.copy-btn:hover {
+    background-color: #7dd3fc;
+    transform: translateY(-1px);
+}
+
+.copy-btn.copied {
+    background-color: #4ade80;
+    color: #052e16;
+}
+
+.copyright {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-top: 1rem;
+}
