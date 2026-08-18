@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Leandro Ruiz | Ing. Informática & Data Science</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Hero Section -->
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="profile-header">
+                <div class="profile-avatar-container">
+                    <div class="profile-avatar">
+                        <!-- Espacio reservado para la foto de perfil -->
+                        <i class="fa-solid fa-user placeholder-icon"></i>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <span class="badge">Disponible para oportunidades</span>
+                    <h1>Leandro Ruiz</h1>
+                    <h2>Estudiante de Ingeniería Informática | Especialización en Ciencias de Datos (Data Science)</h2>
+                    <p class="bio">
+                        Hola, tengo 20 años y me apasiona transformar datos en conocimiento y desarrollar aplicaciones Fullstack robustas, eficientes e interactivas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Habilidades & Lenguajes -->
+        <section class="section">
+            <div class="section-title">
+                <i class="fa-solid fa-code"></i>
+                <h2>Tecnologías y Lenguajes</h2>
+            </div>
+            
+            <div class="tech-cards">
+
+                <!-- Python Card -->
+                <div class="tech-card">
+                    <div class="tech-header">
+                        <div class="tech-title">
+                            <i class="fa-brands fa-python tech-icon python-color"></i>
+                            <h3>Python</h3>
+                        </div>
+                        <button class="toggle-btn" onclick="toggleDetails('python-details', this)">
+                            <span>Ver Experiencia Detallada</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <p class="tech-summary">
+                        Especializado en análisis de datos, Machine Learning, Dashboards interactivos y orquestación con pipelines (Kedro, Frameworks).
+                    </p>
+                    <div id="python-details" class="tech-details">
+                        <p>
+                            En Python manejo librerías clave como <strong>pandas, matplotlib, seaborn, numpy, statsmodels</strong> y <strong>sympy</strong> utilizadas para el procesamiento y análisis riguroso de grandes datasets. Cuento con experiencia en creación de dashboards dinámicos para visualización estratégica, experiencia en uso de frameworks y orquestación con <strong>Kedro</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- JavaScript Card -->
+                <div class="tech-card">
+                    <div class="tech-header">
+                        <div class="tech-title">
+                            <i class="fa-brands fa-js tech-icon js-color"></i>
+                            <h3>JavaScript</h3>
+                        </div>
+                        <button class="toggle-btn" onclick="toggleDetails('js-details', this)">
+                            <span>Ver Experiencia Detallada</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <p class="tech-summary">
+                        Desarrollo orientados a objetos, arquitectura multicapa (MVC) y conexión efectiva de lógica de negocio en el Fullstack.
+                    </p>
+                    <div id="js-details" class="tech-details">
+                        <p>
+                            Dominio de conceptos fundamentales POO como herencia, polimorfismo, encapsulamiento y abstracción. Experiencia en modelado de clases, capacidad integral para conectar la lógica del backend con la interfaz web y manejo de arquitecturas multicapa (por ejemplo, MVC).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- HTML Card -->
+                <div class="tech-card">
+                    <div class="tech-header">
+                        <div class="tech-title">
+                            <i class="fa-brands fa-html5 tech-icon html-color"></i>
+                            <h3>HTML5</h3>
+                        </div>
+                        <button class="toggle-btn" onclick="toggleDetails('html-details', this)">
+                            <span>Ver Experiencia Detallada</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <p class="tech-summary">
+                        Estructuración semántica de interfaces web integradas en la mayoría de mis proyectos interactivos.
+                    </p>
+                    <div id="html-details" class="tech-details">
+                        <p>
+                            Manejo avanzado de etiquetas semánticas y la mayor parte de mis proyectos cuentan con maquetación HTML limpia, accesible y bien estructurada.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Linux Card -->
+                <div class="tech-card">
+                    <div class="tech-header">
+                        <div class="tech-title">
+                            <i class="fa-brands fa-linux tech-icon linux-color"></i>
+                            <h3>Comandos Linux</h3>
+                        </div>
+                        <button class="toggle-btn" onclick="toggleDetails('linux-details', this)">
+                            <span>Ver Experiencia Detallada</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <p class="tech-summary">
+                        Administración Desktop/Cloud, lanzamiento de instancias en Oracle Cloud y despliegue de modelos ML.
+                    </p>
+                    <div id="linux-details" class="tech-details">
+                        <p>
+                            Lanzamiento y configuración de instancias en <strong>Oracle Cloud</strong>, experiencia práctica en Linux tanto a nivel desktop como en servidores/instancias virtuales dedicadas al despliegue de proyectos de Machine Learning.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- SQL Card -->
+                <div class="tech-card">
+                    <div class="tech-header">
+                        <div class="tech-title">
+                            <i class="fa-solid fa-database tech-icon sql-color"></i>
+                            <h3>SQL & Bases de Datos</h3>
+                        </div>
+                        <button class="toggle-btn" onclick="toggleDetails('sql-details', this)">
+                            <span>Ver Experiencia Detallada</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <p class="tech-summary">
+                        Consultas complejas, gestión segura de tablas, modelado en Oracle/MySQL y despliegue en contenedores Docker.
+                    </p>
+                    <div id="sql-details" class="tech-details">
+                        <p>
+                            Sólidos conocimientos en bases de datos relacionales como <strong>PostgreSQL</strong> y <strong>MySQL</strong>. Trabajo de modelado y gestión mediante <strong>SQL Developer</strong> y <strong>Oracle Data Modeler</strong>. Experiencia práctica en despliegue y orquestación de entornos en contenedores con <strong>Docker Compose</strong>.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section class="section">
+            <div class="section-title">
+                <i class="fa-solid fa-folder-open"></i>
+                <h2>Proyectos Destacados</h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag">Fullstack & DevOps</span>
+                        <h3>Gestión de Tareas Colaborativo</h3>
+                    </div>
+                    <p class="project-desc">
+                        Proyecto enfocado en la gestión de tareas en trabajo colaborativo y control de versiones profesional.
+                    </p>
+                    <ul class="project-features">
+                        <li><i class="fa-solid fa-check"></i> Implementación de análisis de seguridad de código con <strong>Snyk</strong>.</li>
+                        <li><i class="fa-solid fa-check"></i> Control de versiones estructurado en equipo.</li>
+                    </ul>
+                    <a href="https://github.com/donMixho/p1-ingenieria-dev.git" target="_blank" rel="noopener noreferrer" class="btn-repo">
+                        <i class="fa-brands fa-github"></i>
+                        <span>Ver Repositorio</span>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag">Fullstack / Software</span>
+                        <h3>Proyecto VitalPets</h3>
+                    </div>
+                    <p class="project-desc">
+                        Sistema integral para la gestión de inventario, control de insumos y agendamiento de citas para veterinaria.
+                    </p>
+                    <ul class="project-features">
+                        <li><i class="fa-solid fa-check"></i> Arquitectura limpia y lógica de negocio para citas/inventario.</li>
+                        <li><i class="fa-solid fa-check"></i> Interfaz intuitiva enfocada en la usabilidad del cliente/médico.</li>
+                    </ul>
+                    <a href="https://github.com/donMixho/Proyecto-VitalPets.git" target="_blank" rel="noopener noreferrer" class="btn-repo">
+                        <i class="fa-brands fa-github"></i>
+                        <span>Ver Repositorio</span>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag">Data Science & ML</span>
+                        <h3>Análisis de Riesgo Cardiometabólico</h3>
+                    </div>
+                    <p class="project-desc">
+                        Modelo de predicción combinando algoritmos supervisados y no supervisados para la evaluación médica preventiva.
+                    </p>
+                    <ul class="project-features">
+                        <li><i class="fa-solid fa-check"></i> Clustering e inferencia con algoritmos supervisados.</li>
+                        <li><i class="fa-solid fa-check"></i> Limpieza, procesamiento de variables y evaluación métrica.</li>
+                    </ul>
+                    <a href="https://github.com/donMixho/Prueba_3_Ciencias_Datos.git" target="_blank" rel="noopener noreferrer" class="btn-repo">
+                        <i class="fa-brands fa-github"></i>
+                        <span>Ver Repositorio</span>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag">Data Science & ML</span>
+                        <h3>Predicción de Desempeño Laboral</h3>
+                    </div>
+                    <p class="project-desc">
+                        Proyecto de Machine Learning orientado a predecir el rendimiento y desempeño de colaboradores.
+                    </p>
+                    <ul class="project-features">
+                        <li><i class="fa-solid fa-check"></i> Análisis exploratorio de datos (EDA) y feature engineering.</li>
+                        <li><i class="fa-solid fa-check"></i> Selección de modelos predictivos y visualización de resultados.</li>
+                    </ul>
+                    <a href="https://github.com/donMixho/CienciasdeDatosLeandroRuiz.git" target="_blank" rel="noopener noreferrer" class="btn-repo">
+                        <i class="fa-brands fa-github"></i>
+                        <span>Ver Repositorio</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Extras / Habilidades Clave -->
+        <section class="section">
+            <div class="section-title">
+                <i class="fa-solid fa-star"></i>
+                <h2>Buenas Prácticas & Infraestructura</h2>
+            </div>
+            <div class="extras-grid">
+                <div class="extra-box">
+                    <i class="fa-solid fa-shield-halved extra-icon"></i>
+                    <div>
+                        <h4>Seguridad en el Código (Snyk)</h4>
+                        <p>Implementación activa de Snyk en entornos de trabajo colaborativo para escaneo de vulnerabilidades y seguridad SAST/SCA en repositorios.</p>
+                    </div>
+                </div>
+                <div class="extra-box">
+                    <i class="fa-brands fa-docker extra-icon"></i>
+                    <div>
+                        <h4>Orquestación Docker Compose</h4>
+                        <p>Despliegue de entornos multicontenedor para aislamiento de bases de datos, APIs y aplicaciones, facilitando entornos de prueba y producción.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Leandro Ruiz — Estudiante de Ing. Informática & Ciencia de Datos</p>
+            <div class="social-links">
+                <a href="https://github.com/donMixho" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
